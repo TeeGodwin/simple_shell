@@ -67,7 +67,10 @@ int error_sep_op(char *input, int i, char last)
 
 	return (error_sep_op(input + 1, i + 1, *input));
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * first_char - finds index of the first char
  *
@@ -77,7 +80,10 @@ int error_sep_op(char *input, int i, char last)
  */
 int first_char(char *input, int *i)
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 	for (*i = 0; input[*i]; *i += 1)
 	{
 		if (input[*i] == ' ' || input[*i] == '\t')
@@ -101,6 +107,10 @@ int first_char(char *input, int *i)
  * @bool: to control msg error
  * Return: no return
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 {
 	char *msg, *msg2, *msg3, *error, *counter;
@@ -140,11 +150,20 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 	_strcat(error, msg3);
 	_strcat(error, "\0");
 
+<<<<<<< HEAD
 	write(STDERR_FILENO, error, length);
 	free(error);
 	free(counter);
 }
 
+=======
+
+	write(STDERR_FILENO, error, length);
+	free(error);
+	free(counter);
+
+}
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * check_syntax_error - intermediate function to
  * find and print a syntax error

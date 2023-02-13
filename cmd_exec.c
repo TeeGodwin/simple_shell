@@ -21,7 +21,10 @@ int is_cdir(char *path, int *i)
 
 	return (0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * _which - locates a command
  *
@@ -71,7 +74,10 @@ char *_which(char *cmd, char **_environ)
 			return (cmd);
 	return (NULL);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * is_executable - determines if is an executable
  *
@@ -116,7 +122,10 @@ int is_executable(data_shell *datash)
 	get_error(datash, 127);
 	return (-1);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * check_error_cmd - verifies if user has permissions to access
  *
@@ -153,7 +162,10 @@ int check_error_cmd(char *dir, data_shell *datash)
 
 	return (0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 /**
  * cmd_exec - executes command lines
  *

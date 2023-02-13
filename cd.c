@@ -7,6 +7,10 @@
  *
  * Return: no return
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 void cd_dot(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -58,6 +62,10 @@ void cd_dot(data_shell *datash)
  * @datash: data relevant (directories)
  * Return: no return
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 void cd_to(data_shell *datash)
 {
 	char pwd[PATH_MAX];
@@ -84,6 +92,10 @@ void cd_to(data_shell *datash)
 	datash->status = 0;
 
 	chdir(dir);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 }
 
 /**
@@ -116,8 +128,13 @@ void cd_previous(data_shell *datash)
 
 	p_pwd = _getenv("PWD", datash->_environ);
 
+<<<<<<< HEAD
 	write(STDOUT_FILENO, p_pwd, _strlen(p_pwd));
 	write(STDOUT_FILENO, "\n", 1);
+=======
+	write(STDOUT_FILENO, p_pwd, _strlen(p_pwd))
+		write(STDOUT_FILENO, "\n", 1);
+>>>>>>> 8945aed473c5ff5b21003eec351d4296b3736062
 
 	free(cp_pwd);
 	if (p_oldpwd)
