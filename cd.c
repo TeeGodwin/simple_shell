@@ -151,6 +151,7 @@ void cd_previous(data_shell *datash)
  * @datash: data relevant (environ)
  * Return: no return
  */
+
 void cd_to_home(data_shell *datash)
 {
 	char *p_pwd, *home;
