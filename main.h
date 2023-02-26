@@ -19,6 +19,7 @@
 /* Points to an array of pointers to strings called the "environment" */
 extern char **environ;
 
+
 /**
  * struct data - struct that contains all relevant data on runtime
  * @av: argument vector
@@ -29,7 +30,6 @@ extern char **environ;
  * @_environ: environment variable
  * @pid: process ID of the shell
  */
-
 typedef struct data
 {
 	char **av;
@@ -47,7 +47,6 @@ typedef struct data
  * @next: next node
  * Description: single linked list to store separators
  */
-
 typedef struct sep_list_s
 {
 	char separator;
@@ -60,12 +59,11 @@ typedef struct sep_list_s
  * @next: next node
  * Description: single linked list to store command lines
  */
-
 typedef struct line_list_s
 {
 	char *line;
 	struct line_list_s *next;
-}
+} line_list;
 
 /**
  * struct r_var_list - single linked list
@@ -75,7 +73,6 @@ typedef struct line_list_s
  * @next: next node
  * Description: single linked list to store variables
  */
-
 typedef struct r_var_list
 {
 	int len_var;
@@ -89,7 +86,6 @@ typedef struct r_var_list
  * @name: The name of the command builtin i.e cd, exit, env
  * @f: data type pointer function.
  */
-
 typedef struct builtin_s
 {
 	char *name;
@@ -211,6 +207,7 @@ char *error_env(data_shell *datash);
 char *error_syntax(char **args);
 char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
+
 
 /* get_error.c */
 int get_error(data_shell *datash, int eval);

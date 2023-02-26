@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * repeated_char - counts the repetitions of a char
+ * repeated_char - counts the repositories of a char
  *
  * @input: input string
  * @i: index
@@ -29,7 +29,7 @@ int error_sep_op(char *input, int i, char last)
 	int count;
 
 	count = 0;
-	if (*input == '\0')
+	if (*input == '\0)
 		return (0);
 
 	if (*input == ' ' || *input == '\t')
@@ -67,6 +67,7 @@ int error_sep_op(char *input, int i, char last)
 
 	return (error_sep_op(input + 1, i + 1, *input));
 }
+
 /**
  * first_char - finds index of the first char
  *
@@ -76,6 +77,7 @@ int error_sep_op(char *input, int i, char last)
  */
 int first_char(char *input, int *i)
 {
+
 	for (*i = 0; input[*i]; *i += 1)
 	{
 		if (input[*i] == ' ' || input[*i] == '\t')
@@ -99,7 +101,6 @@ int first_char(char *input, int *i)
  * @bool: to control msg error
  * Return: no return
  */
-
 void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 {
 	char *msg, *msg2, *msg3, *error, *counter;
@@ -142,8 +143,8 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 	write(STDERR_FILENO, error, length);
 	free(error);
 	free(counter);
-
 }
+
 /**
  * check_syntax_error - intermediate function to
  * find and print a syntax error
