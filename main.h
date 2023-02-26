@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
@@ -51,7 +52,7 @@ typedef struct sep_list_s
 {
 	char separator;
 	struct sep_list_s *next;
-}
+} sep_list;
 
 /**
  * struct line_list_s - single linked list
